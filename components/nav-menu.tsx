@@ -43,7 +43,7 @@ export const NavMenu = ({ size }: { size?: number }) => {
                     as="button"
                     className="transition-transform"
                     size={size ? undefined : "sm"}
-                    src={`${session?.user?.image}`}
+                    src={session?.user?.image ?? undefined}
                     style={{
                         width: size ? size : undefined,
                         height: size ? size : undefined,
@@ -60,7 +60,7 @@ export const NavMenu = ({ size }: { size?: number }) => {
                         <User
                             avatarProps={{
                                 size: "sm",
-                                src: `${session?.user?.image}`,
+                                src: session?.user?.image ?? undefined,
                                 showFallback: true,
                             }}
                             classNames={{
@@ -79,7 +79,7 @@ export const NavMenu = ({ size }: { size?: number }) => {
                     </DropdownItem>
                     <DropdownItem
                         key="settings"
-                        onClick={() => router.push("/settings")}
+                        onClick={() => router.push("/")}
                     >
                         Settings
                     </DropdownItem>
@@ -109,7 +109,7 @@ export const NavMenu = ({ size }: { size?: number }) => {
                     <DropdownItem
                         key="home"
                         endContent={<Home className={iconClasses} size={16} />}
-                        onClick={() => router.push("/home")}
+                        onClick={() => router.push("/")}
                     >
                         Home Page
                     </DropdownItem>

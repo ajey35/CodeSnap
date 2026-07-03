@@ -12,6 +12,12 @@ export default function RunButton() {
         useCodeStore();
 
     async function getOutput() {
+        if (!language.name || !language.version) {
+            setError(true);
+            toast.error("Unable to run code: missing language metadata.");
+            return;
+        }
+
         setRunning(true);
         const requestData = {
             language: language.name,

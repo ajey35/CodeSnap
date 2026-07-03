@@ -88,7 +88,7 @@ export default function CreateSnapModal({ isMobile }: { isMobile: boolean }) {
             setIsLoading(false);
         }
 
-        if (response?.snap) {
+        if (response?.snap?.id) {
             toast.success("snap created");
 
             form.reset();
@@ -96,7 +96,9 @@ export default function CreateSnapModal({ isMobile }: { isMobile: boolean }) {
 
             router.push(`/snap/${response.snap.id}`);
         } else {
-            toast.error("Failed creating snap. Try again later.");
+            toast.error(
+                "Failed creating snap. Try again later. Please refresh and try again.",
+            );
         }
     };
 
