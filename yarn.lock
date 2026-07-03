@@ -2749,10 +2749,10 @@
   dependencies:
     "@tsparticles/engine" "3.9.1"
 
-"@tsparticles/react@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@tsparticles/react/-/react-3.0.0.tgz#d0a794ba53164eb39ce88a3961be723a636b37c0"
-  integrity sha512-hjGEtTT1cwv6BcjL+GcVgH++KYs52bIuQGW3PWv7z3tMa8g0bd6RI/vWSLj7p//NZ3uTjEIeilYIUPBh7Jfq/Q==
+"@tsparticles/react@^4.2.1":
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/@tsparticles/react/-/react-4.2.1.tgz#d47a885bfa929a3e4a3a76b9a44529957000bfce"
+  integrity sha512-NbbXBYPKIQcgpwn3ZFbkI5HR1y/d9AFgctq2SmhNwc+D2IwEbV/RHsDut5utz+cfI3y1Ep6lZ4MwdiTr+LXebA==
 
 "@tsparticles/shape-circle@3.9.1":
   version "3.9.1"
